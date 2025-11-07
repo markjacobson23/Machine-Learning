@@ -1,7 +1,8 @@
 import numpy as np
 
 
-def gradient_descent(x, y, batch, shuffle=False, lr=.001, tol=1e-8, max_epochs=10000, verbose=False):
+def gradient_descent_from_scratch(x, y, batch, shuffle=False, lr=.001, tol=1e-8, max_epochs=10000, verbose=False):
+    """this is an implementation of linear regression using batch gradient descent written from scratch with NumPy."""
     def mse(yhat, y):
         """Computes mean square error between prediction and target, scaled
         by 1/2 and length of target."""
